@@ -1,0 +1,49 @@
+header{
+    border: 2px solid black;
+    color: lavender;
+    background-color: cadetblue;
+    padding: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar{
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 2px;
+    background-color: rgb(133, 148, 166);
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px slid balck; */
+    
+}
+nav ul li{
+    padding-left: 20px;
+    list-style: none;
+}
+nav ul li a{
+    padding: 12px 70px;
+    color: cornsilk;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    background-color: black;
+    border-radius: 25px;
+
+}
+.intro{
+    font-size: 22px;
+    color: rgb(32, 42, 15);
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.row-1{
+    padding-left: 32px;
+}
