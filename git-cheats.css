@@ -7,8 +7,14 @@ header{
     padding-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+header img{
+    width: 20px;
+    height: 25px;
+    padding-bottom: 1px;
+}
 header h1{
     font-family: 'Courier New', Courier, monospace;
+    padding-top: 1px;
 }
 .navbar{
     border: 2px solid black;
