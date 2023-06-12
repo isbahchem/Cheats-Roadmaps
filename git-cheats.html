@@ -76,6 +76,41 @@
             <p>show all commits in the current branches history</p>
         </div>
     </section>
+    <section class="row-2">
+        <div class="inspect">
+            <h3>INSPECT & COMPARE</h3>
+            <p>Examining logs, diffs and object information</p>
+            <h4>git log</h4>
+            <p>show the commit history for the currently active branch</p>
+            <h4>git log branchB..branchA</h4>
+            <p>show the commits on branchA that are not on branchB</p>
+            <h4>git log --follow [file]</h4>
+            <p>show the commits that changed file, even across renames</p>
+            <h4>git diff branchB..branchA</h4>
+            <p>show the diff of what is in branchA that is not in branchB</p>
+            <h4>git show[SHA]</h4>
+            <p>show any object in Git in human-readable format</p>
+        </div>
+        <div class="tracking">
+            <h3>TRACKING PATH CHANGES</h3>
+            <p>Versioning file removes and path changes</p>
+            <h4>git rm [file]</h4>
+            <p>delete the file from project and stage the removal for commit</p>
+            <h4>git mv [existing-path] [new-path]</h4>
+            <p>change an existing file path and change the move</p>
+            <h4>git log --stat -M</h4>
+            <p>show all commit logs with indication of any paths that moved</p>
+        </div>
+
+        <div class="ignoring">
+            <h3>IGNORING PATTERNS</h3>
+            <p>Preventing unintentional staging or commiting of files</p>
+            <h4>logs/ <br>*.notes <br>pattern*/</h4>
+            <p>save a file with desired patterns as gitignore with either direct string matches or wild card globs</p>
+            <h4>git config --global core.excludesfile [file]</h4>
+            <p>system wide ignore pattern for all local repositories</p>
+        </div>
+    </section>
     <footer>
 
     </footer>
