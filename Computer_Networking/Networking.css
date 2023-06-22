@@ -12,5 +12,14 @@
     display: inline;
     padding-left: 22px;
     padding-right: 22px;
+    border: 2px solid wheat;
+    border-radius: 12px;
+    margin-right: 12px;
 
+}
+.navbar ul li a{
+    margin-right: 12px;
+}
+a::hover{
+    color: blanchedalmond;
 }
