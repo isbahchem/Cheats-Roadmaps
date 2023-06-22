@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Networking</title>
-    </head>
-    <body>
-        
-    
-        <nav>
-            <ul>
-                <li><a href="Physical-Layer.html" target="_blank">Physical Layer</a></li>
-                <li><a href="DataLink_Layer.html" target="_blank">Data Link Layer</a></li>
-                <li><a href="Network-Layer.html" target="_blank">Network Layer</a></li>
-                <li><a href="Transport-Layer.html" target="_blank">Transport Layer</a></li>
-                <li><a href="Application-Layer.html" target="_blank">Application Layer</a></li>
-            </ul>
-        </nav>
-        <h1>DataLink Layer</h1>
-        <h2>Ethernet and MAC Addressess</h2>
-        <div>
-            <h3>Ethernet</h3>
-            <p>The protocol most widely used to send data accross individual links.</p>
-            <h3>MAC Addressess</h3>
-            <p>A globally unique identifier attached to an individual network interface.</p>
-            <p>It's a 48 bit number normally represented by six groupings of two hexadecimal numbers.</p>
-        </div>
-    </body>
+  <head>
+    <title>Networking</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="Physical-Layer.html" target="_blank">Physical Layer</a>
+        </li>
+        <li>
+          <a href="DataLink_Layer.html" target="_blank">Data Link Layer</a>
+        </li>
+        <li><a href="Network-Layer.html" target="_blank">Network Layer</a></li>
+        <li>
+          <a href="Transport-Layer.html" target="_blank">Transport Layer</a>
+        </li>
+        <li>
+          <a href="Application-Layer.html" target="_blank">Application Layer</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>DataLink Layer</h1>
+    <h2>Ethernet and MAC Addressess</h2>
+    <div>
+      <h3>Ethernet</h3>
+      <p>
+        The protocol most widely used to send data accross individual links.
+      </p>
+      <h3>MAC Addressess</h3>
+      <p>
+        A globally unique identifier attached to an individual network
+        interface.
+      </p>
+      <p>
+        It's a 48 bit number normally represented by six groupings of two
+        hexadecimal numbers.
+      </p>
+      <h3>Organiztionally Unique identifier (OUI)</h3>
+      <p>The first three octets of a MAC Address</p>
+      <p>
+        Ethernet uses MAC Address to ensure that the data it sends has both an
+        address for the machine that sent the transmission, as well as the one
+        the transmission was intended for.
+      </p>
+    </div>
+    <div>
+      <p>
+        A <strong>Unicast</strong> transmission is always meant for just one
+        receiving address.
+      </p>
+      <p>
+        If the least significant bit in the first octet of a destination address
+        is set to zero, it means that the ethernet frame is intended for only
+        the destination address.
+      </p>
+      <p>
+        If the least significant bit in the first octet of a destination address
+        is set to one, it means you are dealing with a <em>multicast</em> frame.
+      </p>
+    </div>
+  </body>
 </html>

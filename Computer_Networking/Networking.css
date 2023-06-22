@@ -1,0 +1,16 @@
+.navbar{
+    display: inline-flex;
+    border: 2px solid black;
+    background-color: mediumseagreen;
+    width: 100%;
+    border-radius: 20px;
+}
+.navbar ul{
+    display: inline-flex;
+}
+.navbar ul li{
+    display: inline;
+    padding-left: 22px;
+    padding-right: 22px;
+
+}
