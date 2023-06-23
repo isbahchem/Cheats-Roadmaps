@@ -12,14 +12,20 @@
     display: inline;
     padding-left: 22px;
     padding-right: 22px;
-    border: 2px solid wheat;
+    /* border: 2px solid wheat; */
     border-radius: 12px;
     margin-right: 12px;
+    list-style: none;
 
 }
 .navbar ul li a{
     margin-right: 12px;
+    padding: 6px;
+    text-decoration: none;
 }
-a::hover{
+nav ul li a:hover{
     color: blanchedalmond;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 20px;
 }
