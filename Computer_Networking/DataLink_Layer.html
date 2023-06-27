@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Networking</title>
-    <link rel="stylesheet" href="Networking.css">
+    <link rel="stylesheet" href="Networking.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -61,15 +61,31 @@
         is set to one, it means you are dealing with a <em>multicast</em> frame.
       </p>
       <p>Ethernet Broadcast address is all F's</p>
-      <p>            FF:FF:FFFF:FF:FF         </p>
+      <p>FF:FF:FFFF:FF:FF</p>
     </div>
     <div>
       <h3>Disecting an Ethernet Frame</h3>
       <h4>Data Packet</h4>
-      <p>An all encompassing term that represents any single set of binary data being sent accross a network link.</p>
+      <p>
+        An all encompassing term that represents any single set of binary data
+        being sent accross a network link.
+      </p>
       <h4>Ethernet Frame</h4>
-      <p>A highly structured collection of information presented in a specific order.</p>
-      
+      <p>
+        A highly structured collection of information presented in a specific
+        order.
+      </p>
+      <h5>Preamble</h5>
+      <p>
+        8 bytes (or 64 bits) long, and can be itself split into two sections.
+      </p>
+      <h5>Start Frame Delimiter (SFD)</h5>
+      <p>
+        is last byte of Preamble, signals to a receiving device that the
+        Preamble is over and that the actual frame contents will now follow.
+      </p>
+      <h5>Destination MAC Address</h5>
+      <p>The hardware address of the intended recipient.</p>
     </div>
   </body>
 </html>
