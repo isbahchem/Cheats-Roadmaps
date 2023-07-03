@@ -1,34 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Networking</title>
-        <link rel="stylesheet" href="Networking.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="Physical-Layer.html" target="_blank">Physical Layer</a></li>
-                <li><a href="DataLink_Layer.html" target="_blank">Data Link Layer</a></li>
-                <li><a href="Network-Layer.html" target="_blank">Network Layer</a></li>
-                <li><a href="Transport-Layer.html" target="_blank">Transport Layer</a></li>
-                <li><a href="Application-Layer.html" target="_blank">Application Layer</a></li>
-            </ul>
-        </nav>
-        <h1 style="color: darkgreen">NETWORK LAYER</h1>
-        <p>IP Addresses belongs to Networks, not to devices attached to those networks.</p>
-        <div class="IPV4">
-            <h2>IPV4 Datagram and Encapsulation</h2>
-            <h5>IP Datagram</h5>
-            <p>A highly Structured series of fields that are strictly defined.</p>
+  <head>
+    <title>Networking</title>
+    <link rel="stylesheet" href="Networking.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="Physical-Layer.html" target="_blank">Physical Layer</a>
+        </li>
+        <li>
+          <a href="DataLink_Layer.html" target="_blank">Data Link Layer</a>
+        </li>
+        <li><a href="Network-Layer.html" target="_blank">Network Layer</a></li>
+        <li>
+          <a href="Transport-Layer.html" target="_blank">Transport Layer</a>
+        </li>
+        <li>
+          <a href="Application-Layer.html" target="_blank">Application Layer</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 style="color: darkgreen">NETWORK LAYER</h1>
+    <p>
+      IP Addresses belongs to Networks, not to devices attached to those
+      networks.
+    </p>
+    <div class="IPV4">
+      <h2>IPV4 Datagram and Encapsulation</h2>
+      <h5>IP Datagram</h5>
+      <p>A highly Structured series of fields that are strictly defined.</p>
 
-            <h4>Version</h4>
-            <p>What version of Internet Protocol, the most common version is IPV4. IPV6 is new.</p>
-            <h4>Header Length</h4>
-            <p>How long the entire header. Almost 20 bytes in length when dealing with IPV4.</p>
-            <h4>Service Type</h4>
-            <p>8 bits can be used to specify details about quality of service or QoS, technologies.</p>
-            <h4>Total Length</h4>
-            <p>Indicates the total length of IP datagram.</p>
-        </div>
-    </body>
+      <h4>Version</h4>
+      <p>
+        What version of Internet Protocol, the most common version is IPV4. IPV6
+        is new.
+      </p>
+      <h4>Header Length</h4>
+      <p>
+        How long the entire header. Almost 20 bytes in length when dealing with
+        IPV4.
+      </p>
+      <h4>Service Type</h4>
+      <p>
+        8 bits can be used to specify details about quality of service or QoS,
+        technologies.
+      </p>
+      <h4>Total Length</h4>
+      <p>Indicates the total length of IP datagram.</p>
+      <h4>Identification</h4>
+      <p>16 bit number that is used to group messages together.</p>
+      <p>
+        The maximum size of a single datagram is the largest number you can
+        represent with 16 bits <em> 65,535</em>
+      </p>
+      <p>
+        If the total amount of data that needs to be sent is larger than what
+        can fit in a single datagram, the IP layer needs to split this data into
+        many individual packets.
+      </p>
+      <h4>Flag</h4>
+      <p>
+        Used to indicate if a datagram is allowed to be fragmented or to
+        indicate that the datagram has already been fragmented.
+      </p>
+    </div>
+  </body>
 </html>
