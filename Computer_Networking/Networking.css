@@ -53,3 +53,9 @@ tr td {
     color: rgb(197, 222, 223);
     background-color: chocolate;
 }
+.networklayer-table tr td{
+    font-size: 22px;
+    border: 1px solid darkblue;
+    background-color: rgb(4, 14, 46);
+    color: antiquewhite;
+}
