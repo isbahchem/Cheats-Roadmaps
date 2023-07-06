@@ -76,16 +76,52 @@
         traverse before its thrown away.
       </p>
       <h4>Protocol</h4>
-      <p>8 bit field that contains data about what transport layer protocol is being used.</p>
-      <ul><li>TCP</li><li>UDP</li></ul>
+      <p>
+        8 bit field that contains data about what transport layer protocol is
+        being used.
+      </p>
+      <ul>
+        <li>TCP</li>
+        <li>UDP</li>
+      </ul>
       <h4>Header Checksum</h4>
       <p>A checksum of the contents of the entire IP datagram header</p>
       <h4>Source IP Address</h4>
       <h4>Destination IP Address</h4>
       <h4>IP Options</h4>
-      <p>An optional field and is used to set special characteristics for datagrams primarily used for testing purposes</p>
+      <p>
+        An optional field and is used to set special characteristics for
+        datagrams primarily used for testing purposes
+      </p>
       <h4>Padding</h4>
-      <p>A series of zeros used to ensure the header is the correct total size.</p>
+      <p>
+        A series of zeros used to ensure the header is the correct total size.
+      </p>
     </div>
+    <table class="networklayer-table">
+      <tr>
+        <td>Application</td>
+        <td>Message</td>
+      </tr>
+      <tr>
+        <td>Transport</td>
+        <td>TCP or UDP Header</td>
+        <td>Message</td>
+      </tr>
+      <tr>
+        <td>Network</td>
+        <td>IP Header</td>
+        <td>TCP or UDP Header</td>
+        <td>Message</td>
+      </tr>
+      <tr>
+        <td>DataLink</td>
+        <td>Ethernet Header</td>
+        <td>IP Header</td>
+        <td>TCP or UDP Header</td>
+        <td>Message</td>
+        <td>Ethernet Footer</td>
+      </tr>
+    </table>
   </body>
 </html>
