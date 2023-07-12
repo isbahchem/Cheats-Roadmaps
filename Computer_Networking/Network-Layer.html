@@ -166,14 +166,30 @@
     <p>To describe where one network or system ends and another one begins.</p>
     <p><em><strong>CIDR Notation or Slash Notation</strong></em></p>
     <p>Example: 9.100.100.100/24</p>
+  </div>
     <div class="Routing">
       <h3>Routing</h3>
       <p>A network device that forwards traffic depending on the destination address of that traffic.</p>
       <p><span style="border-radius: 30px; border: 1px solid black; padding: 8px;">Recieves data packet</span>----><span style="border: 1px solid black; border-radius: 30px; padding: 8px;">Router: Examines destination IP address</span>----><span style="border-radius: 30px; border: 1px solid black; padding: 8px;">Looks up IP destination Netwrok in routing table</span>-----><span style="border-radius: 30px; border: 1px solid black; padding: 8px;">Forwards traffic to destination</span> </p>
+    <div class="routing-table">
+      <h3>Routing Table</h3>
+      <table>
+        <thead>
+          <th>Basic Routing Table</th>
+        </thead>
+        <tr>
+          <td>Destination Network</td><td>Next Hop</td><td>Total Hops</td> <td>Interface</td>
+        </tr>
+        <tr>
+          <td>192.168.1.1/24</td><td>192.173.0.1</td><td>5</td><td>192.173.0.254</td>
+        </tr>
+      </table>
     </div>
+    </div>
+    
 
     
-padding: 8px;
-    </div>
+
+    
   </body>
 </html>
