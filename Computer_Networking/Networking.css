@@ -61,3 +61,14 @@ tr td {
     background-color: rgb(4, 14, 46);
     color: antiquewhite;
 }
+.routing-table th{
+    border: 2px solid darkgreen;
+    display: inline-flex;
+}
+.routing-table td{
+    border: 1px solid darkgreen;
+    border-radius: 2px;
+    margin: 3px;
+    background-color: lightgreen;
+    color: rgb(47, 57, 29);
+}
