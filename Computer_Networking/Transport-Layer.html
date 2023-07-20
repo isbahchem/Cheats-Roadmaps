@@ -30,7 +30,16 @@
             <p>Syetem Ports are identified as ports through 1023</p>
             <h3>Sequence Number</h3>
             <p>A 32-bit number that is used to keep track of where in a sequence of TCP segments this one is expected to be.</p>
-            
+            <h3>Acknowledgement Number</h3>
+            <p>The number of the next expected segment</p>
+            <h3>Data Offset Field</h3>
+            <p>A 4-bit number that communicates how long the TCP header for this segment is.</p>
+            <h3>TCP Window (16-bit)</h3>
+            <p>Specifies the range of sequence numbers that might be sent before an acknowledgement is required.</p>
+            <h3>Urgent Pointer Field</h3>
+            <p>Used in conjunction with one of the TCP control flags to point out particular segments that might be more important than others.</p>
+            <h3>Options Field</h3>
+            <p>It is sometimes used for more complicated flow control protocols.</p>
         </div>
     </body>
 </html>
