@@ -1,45 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Networking</title>
-        <link rel="stylesheet" href="Networking.css">
-    </head>
-    <body style="background-color: rgb(250, 250, 214);">
-        <nav class="navbar">
-            <ul>
-                <li><a href="Physical-Layer.html" target="_blank">Physical Layer</a></li>
-                <li><a href="DataLink_Layer.html" target="_blank">Data Link Layer</a></li>
-                <li><a href="Network-Layer.html" target="_blank">Network Layer</a></li>
-                <li><a href="Transport-Layer.html" target="_blank">Transport Layer</a></li>
-                <li><a href="Application-Layer.html" target="_blank">Application Layer</a></li>
-            </ul>
-        </nav>
-        <h1 style="color: darkred;">Transport Layer</h1>
-        <p>The transport layer allows traffic to be directed to specific network applications.</p>
-        <h3>PORT</h3>
-        <p>A 16-bit number that is used to direct traffic to specific services running on a network computer.</p>
-        <div class="TCP-segment">
-            <h2>Dissection of a TCP Segment</h2>
-            <p>TCP Segment is made up of a TCP header and a data section.</p>
-
-            <h3>Destination Port</h3>
-            <p>The port of the service the traffic is intended for.</p>
-            <h3>Source Port</h3>
-            <p>A high numbered port chosen from a special section of ports known as ephemeral ports.</p>
-            <p>Ephemeral Ports are identified as ports 49152 through 65535</p>
-            <p>Syetem Ports are identified as ports through 1023</p>
-            <h3>Sequence Number</h3>
-            <p>A 32-bit number that is used to keep track of where in a sequence of TCP segments this one is expected to be.</p>
-            <h3>Acknowledgement Number</h3>
-            <p>The number of the next expected segment</p>
-            <h3>Data Offset Field</h3>
-            <p>A 4-bit number that communicates how long the TCP header for this segment is.</p>
-            <h3>TCP Window (16-bit)</h3>
-            <p>Specifies the range of sequence numbers that might be sent before an acknowledgement is required.</p>
-            <h3>Urgent Pointer Field</h3>
-            <p>Used in conjunction with one of the TCP control flags to point out particular segments that might be more important than others.</p>
-            <h3>Options Field</h3>
-            <p>It is sometimes used for more complicated flow control protocols.</p>
-        </div>
-    </body>
+  <head>
+    <title>Networking</title>
+    <link rel="stylesheet" href="Networking.css" />
+  </head>
+  <body style="background-color: rgb(250, 250, 214)">
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="Physical-Layer.html" target="_blank">Physical Layer</a>
+        </li>
+        <li>
+          <a href="DataLink_Layer.html" target="_blank">Data Link Layer</a>
+        </li>
+        <li><a href="Network-Layer.html" target="_blank">Network Layer</a></li>
+        <li>
+          <a href="Transport-Layer.html" target="_blank">Transport Layer</a>
+        </li>
+        <li>
+          <a href="Application-Layer.html" target="_blank">Application Layer</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 style="color: darkred">Transport Layer</h1>
+    <p>
+      The transport layer allows traffic to be directed to specific network
+      applications.
+    </p>
+    <h3>PORT</h3>
+    <p>
+      A 16-bit number that is used to direct traffic to specific services
+      running on a network computer.
+    </p>
+    <div class="TCP-segment">
+      <h2>Dissection of a TCP Segment</h2>
+      <p>TCP Segment is made up of a TCP header and a data section.</p>
+      <h3>Destination Port</h3>
+      <p>The port of the service the traffic is intended for.</p>
+      <h3>Source Port</h3>
+      <p>
+        A high numbered port chosen from a special section of ports known as
+        ephemeral ports.
+      </p>
+      <p>Ephemeral Ports are identified as ports 49152 through 65535</p>
+      <p>Syetem Ports are identified as ports through 1023</p>
+      <h3>Sequence Number</h3>
+      <p>
+        A 32-bit number that is used to keep track of where in a sequence of TCP
+        segments this one is expected to be.
+      </p>
+      <h3>Acknowledgement Number</h3>
+      <p>The number of the next expected segment</p>
+      <h3>Data Offset Field</h3>
+      <p>
+        A 4-bit number that communicates how long the TCP header for this
+        segment is.
+      </p>
+      <h3>TCP Window (16-bit)</h3>
+      <p>
+        Specifies the range of sequence numbers that might be sent before an
+        acknowledgement is required.
+      </p>
+      <h3>Urgent Pointer Field</h3>
+      <p>
+        Used in conjunction with one of the TCP control flags to point out
+        particular segments that might be more important than others.
+      </p>
+      <h3>Options Field</h3>
+      <p>It is sometimes used for more complicated flow control protocols.</p>
+      <div style="text-align: justify; display: inline-flex; border: 1px solid red; background-color: darkseagreen;">
+        <h3 style="color: cornsilk; background-color: black;  text-transform: uppercase; text-overflow: ellipsis; display: flex; border-radius: 4px; height: fit-content;">Control Flags</h3>
+        <h5>URG(urgent)</h5>
+        <p>
+          A value of one here indicates that the segment is considered urgent
+          and that the urgent pointer field has more data about this.
+        </p>
+        <h5>ACK(acknowledged)</h5>
+        <p>
+          A value of one in this field means that the acknowledgement number
+          field should be examined.
+        </p>
+        <h5>PSH(push)</h5>
+        <p>
+          The transmitting device wants the receiving device to push currently
+          buffered data to the application on the receiving end as soon as
+          possible.
+        </p>
+        <h5>RST(reset)</h5>
+        <p>
+          One of the sides in a TCP connection hasn't been able to properly
+          recover from a series of missing or malformed segments.
+        </p>
+        <h5>SYN(synchronize)</h5>
+        <p>
+          It's used when first establishing a TCP connection and makes sure the
+          receiving end knows to examine the sequence number field.
+        </p>
+        <h5>FIN(finish)</h5>
+        <p>
+          When this flag is set to one, it means the transmitting computer
+          doesnot have any more data to send and the connection can be closed.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
